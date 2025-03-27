@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tikitoki/domain/entities/video_post.dart';
+import 'package:tikitoki/presentation/widgets/video/fullscreen_player.dart';
 import 'package:tikitoki/presentation/widgets/video_player/video_buttons.dart';
 
 class VideoScrollableView extends StatelessWidget {
@@ -17,6 +18,12 @@ class VideoScrollableView extends StatelessWidget {
         final VideoPost videoPost = videos[index];
         return Stack(
           children: [
+            SizedBox.expand(
+              child: FullScreenPlayer(
+                videoUrl: videoPost.videoUrl,
+                caption: videoPost.caption,
+              ),
+            ),
             Positioned(
               right: 20,
               bottom: 40,

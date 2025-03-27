@@ -47,4 +47,10 @@ List<Map<String, dynamic>> videoPosts = [
     'likes': 342,
     'views': 3332,
   },
+  {
+    'name': 'que pedo que pedo',
+    'videoUrl': 'assets/videos/1.mp4',
+    'likes': 0,
+    'views': 0,
+  },
 ];
